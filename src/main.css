@@ -1,0 +1,63 @@
+body {
+  background-color: #d6d6d6;
+  background-image: url("/bg01.png");
+  font-family: garamond, "Times New Roman", Times, serif;
+  margin: 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  min-width: 100vw;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+}
+.banner {
+  min-height: 40vh;
+  min-width: 100%;
+  background: url("/banner.jpeg") center;
+  background-size: cover;
+}
+.overlay {
+  z-index: 1;
+  color: #f5f5f5cf;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+.overlay div {
+  font-size: 50px;
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  user-select: none;
+}
+
+.content {
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+}
+
+.content:-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  background-image: url("/bg01.png");
+  background-color: #d6d6d6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #696969;
+  border-radius: 10px;
+}
